@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links Úteis - Vestibular & ENEM</title>
+    <style>
+        :root {
+            --bg-color: #f8fafc;
+            --text-main: #0f172a;
+            --text-muted: #64748b;
+            --card-bg: #ffffff;
+            --primary: #0ea5e9;
+            --primary-hover: #0284c7;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.5;
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            padding: 2rem 1.5rem;
+            padding-bottom: 4rem;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+
+        .avatar-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            display: inline-block;
+            background: white;
+            padding: 1rem;
+            border-radius: 50%;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        p.subtitle {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .category-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-main);
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #e2e8f0;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .links-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .link-card {
+            display: flex;
+            align-items: center;
+            background-color: var(--card-bg);
+            padding: 1rem;
+            border-radius: 12px;
+            text-decoration: none;
+            color: var(--text-main);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.1);
+            transition: all 0.2s ease;
+            border: 1px solid transparent;
+        }
+
+        .link-card:hover, .link-card:active {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            border-color: #e0f2fe;
+        }
+
+        .link-icon {
+            font-size: 1.5rem;
+            margin-right: 1rem;
+            min-width: 32px;
+            text-align: center;
+        }
+
+        .link-content {
+            flex-grow: 1;
+        }
+
+        .link-title {
+            font-weight: 600;
+            font-size: 1rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .link-desc {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        /* Cores dos ícones baseadas na categoria */
+        .cat-tools .link-icon { filter: hue-rotate(0deg); }
+        .cat-gov .link-icon { filter: hue-rotate(90deg); }
+        .cat-books .link-icon { filter: hue-rotate(180deg); }
+        .cat-social .link-icon { filter: grayscale(100%); }
+
+        footer {
+            margin-top: 3rem;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="avatar-icon">🎓</div>
+            <h1>Portal do Vestibulando</h1>
+            <p class="subtitle">Ferramentas, apostilas e links essenciais para a sua aprovação</p>
+        </header>
+
+        <main>
+            <!-- Simuladores e Ferramentas -->
+            <h2 class="category-title cat-tools">📊 Simuladores e Ferramentas</h2>
+            <div class="links-group">
+                <a href="https://fisica.net/enem/calculo-da-nota-e-da-media/enem-estimativa-nota-2027.php" target="_blank" class="link-card">
+                    <span class="link-icon">🎯</span>
+                    <div class="link-content">
+                        <div class="link-title">Simulador de Notas ENEM</div>
+                        <div class="link-desc">Estime sua nota baseada na quantidade de acertos</div>
+                    </div>
+                </a>
+
+                <a href="https://docs.google.com/spreadsheets/d/1jHxJ4WiJgMx7GpO3cpGD2SkRK7ePLr35h1upNS0ZHKM/edit?gid=0#gid=0" target="_blank" class="link-card">
+                    <span class="link-icon">📈</span>
+                    <div class="link-content">
+                        <div class="link-title">Planilha Desempenhos Med</div>
+                        <div class="link-desc">Jogue suas notas e calcule suas médias</div>
+                    </div>
+                </a>
+
+                <a href="https://professorfredao.app.br/" target="_blank" class="link-card">
+                    <span class="link-icon">📱</span>
+                    <div class="link-content">
+                        <div class="link-title">App Prof. Fredão</div>
+                        <div class="link-desc">Ferramentas e análises estatísticas para o vestibular</div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Vagas MEC -->
+            <h2 class="category-title cat-gov">🏛️ Vagas e Sistemas do Governo</h2>
+            <div class="links-group">
+                <a href="https://sisu.mec.gov.br/#/vagas" target="_blank" class="link-card">
+                    <span class="link-icon">🔎</span>
+                    <div class="link-content">
+                        <div class="link-title">Consulta de Vagas - SISU</div>
+                        <div class="link-desc">Consulte todas as vagas ofertadas em federais</div>
+                    </div>
+                </a>
+
+                <a href="https://acessounico.mec.gov.br/busca" target="_blank" class="link-card">
+                    <span class="link-icon">🎓</span>
+                    <div class="link-content">
+                        <div class="link-title">Portal Único - FIES e ProUni</div>
+                        <div class="link-desc">Busque vagas e notas de corte em universidades privadas</div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Cartilhas e Materiais de Estudo -->
+            <h2 class="category-title cat-books">📚 Cartilhas e Materiais</h2>
+            <div class="links-group">
+                <a href="https://drive.google.com/file/d/1fB3JLd5hWC1IDQc8lWkneON6UxVmFhrA/view" target="_blank" class="link-card">
+                    <span class="link-icon">📖</span>
+                    <div class="link-content">
+                        <div class="link-title">Cartilha AD31 UFCSPA</div>
+                        <div class="link-desc">Material completo elaborado pela turma</div>
+                    </div>
+                </a>
+
+                <a href="https://drive.google.com/file/d/1iKRgTakI7rx3oeKxYOZP7S4NskA3FC8-/view" target="_blank" class="link-card">
+                    <span class="link-icon">✍️</span>
+                    <div class="link-content">
+                        <div class="link-title">Cartilha de Redações AD31 UFCSPA</div>
+                        <div class="link-desc">Exemplos de redações e estruturas</div>
+                    </div>
+                </a>
+
+                <a href="https://desempenhosmed.com/cartilhas" target="_blank" class="link-card">
+                    <span class="link-icon">📂</span>
+                    <div class="link-content">
+                        <div class="link-title">Todas as Cartilhas - Desempenhos Med</div>
+                        <div class="link-desc">Acervo com diversos guias e apostilas gratuitas</div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Perfis Úteis no Instagram -->
+            <h2 class="category-title cat-social">📱 Perfis Úteis no Instagram</h2>
+            <div class="links-group">
+                <a href="https://www.instagram.com/medicinaufcspa/" target="_blank" class="link-card">
+                    <span class="link-icon">⚕️</span>
+                    <div class="link-content">
+                        <div class="link-title">@medicinaufcspa</div>
+                        <div class="link-desc">Perfil do curso de Medicina da UFCSPA</div>
+                    </div>
+                </a>
+
+                <a href="https://www.instagram.com/comfor31med/" target="_blank" class="link-card">
+                    <span class="link-icon">📸</span>
+                    <div class="link-content">
+                        <div class="link-title">@comfor31med</div>
+                        <div class="link-desc">Acompanhe a Comissão de Formatura</div>
+                    </div>
+                </a>
+
+                <a href="https://www.instagram.com/lider.medfff/" target="_blank" class="link-card">
+                    <span class="link-icon">💡</span>
+                    <div class="link-content">
+                        <div class="link-title">@lider.medfff</div>
+                        <div class="link-desc">Dicas e rotina de estudos para Medicina</div>
+                    </div>
+                </a>
+
+                <a href="https://www.instagram.com/desempenhosmed/" target="_blank" class="link-card">
+                    <span class="link-icon">🏆</span>
+                    <div class="link-content">
+                        <div class="link-title">@desempenhosmed</div>
+                        <div class="link-desc">Estatísticas, notas de corte e aprovação</div>
+                    </div>
+                </a>
+            </div>
+        </main>
+
+        <footer>
+            <p>Foco nos estudos! Boa sorte no vestibular.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
